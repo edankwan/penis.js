@@ -36,4 +36,4 @@ penis.js uses the global variables "B" and "D" such that you can use the awesome
 
 License
 ---
-penis.js is currently under **Giant Penis License(GPL)** which is a deformed M.I.T license included a penis acsii code.
+penis.js is currently under **Giant Penis License(GPL)** which is a deformed M.I.T license included a penis ascii code.
