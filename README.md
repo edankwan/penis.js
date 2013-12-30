@@ -27,7 +27,7 @@ var softPenisCompareResult = B==D; // true
 var hardPenisCompareResult = B===D; // false
 
 // or...
-var continent = B===D ? 'Africa' : 'Asia');
+var continent = B===D ? 'Africa' : 'Asia';
 ```
 
 Caution
