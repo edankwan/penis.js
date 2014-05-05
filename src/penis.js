@@ -1,6 +1,6 @@
 /**
 
-The Giant Penis License (GLP)
+The Giant Penis License (GPL)
 
 Copyright (c) 2013 Edan Kwan
 
