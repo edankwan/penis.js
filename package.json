@@ -1,0 +1,31 @@
+{
+  "name": "penis.js",
+  "version": "0.1.0",
+  "description": "for comparing variables with B==D",
+  "main": "src/penis.js",
+  "scripts": {
+    "test": "mocha --reporter spec test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jesseditson/penis.js.git"
+  },
+  "author": "Edan Kwan < info@edankwan.com>",
+  "contributors": [
+    "Jesse Ditson <jesse.ditson@gmail.com>"
+  ],
+  "keywords": [
+    "penis"
+  ],
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "rimraf": "~2.2.8",
+    "should": "~4.0.4",
+    "supertest": "~0.13.0"
+  },
+  "license": "BSD (MIT)",
+  "bugs": {
+    "url": "https://github.com/jesseditson/penis.js/issues"
+  },
+  "homepage": "https://github.com/jesseditson/penis.js"
+}
