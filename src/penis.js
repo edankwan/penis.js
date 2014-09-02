@@ -63,6 +63,8 @@ THE SOFTWARE.
     /*jslint browser: true*/
     /*global define, module, global*/
 
+    var prev = { B : undefined, D : undefined };
+
     var _global = typeof window === 'undefined' ? global : window;
 
     var penis = {
@@ -70,14 +72,46 @@ THE SOFTWARE.
         version: 0.1,
 
         setBalls: function (balls) {
+            if (prev.B === undefined) {
+              prev.B = _global.B;
+            }
             _global.B = balls;
         },
 
         setDickHead: function (dickHead) {
+            if (prev.D === undefined) {
+              prev.D = _global.D;
+            }
             _global.D = dickHead;
+        },
+
+        reset: function(){
+            _global.D = prev.D;
+            prev.D = undefined;
+            _global.B = prev.B;
+            prev.B = undefined;
         }
 
     };
+
+    // add some setters so we can set penis.balls and penis.head directly
+    Object.defineProperty(penis,'balls',{
+      get : function(){
+        return _global.B;
+      },
+      set : penis.setBalls,
+      enumerable : true,
+      configurable : false
+    });
+
+    Object.defineProperty(penis,'head',{
+      get : function(){
+        return _global.D;
+      },
+      set : penis.setDickHead,
+      enumerable : true,
+      configurable : false
+    });
 
     //exports to multiple environments
     if (typeof define === 'function' && define.amd) { //AMD
