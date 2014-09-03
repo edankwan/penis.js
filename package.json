@@ -23,7 +23,17 @@
   },
   "testling" : {
     "harness" : "mocha-bdd",
-    "files" : "test/**/*.js"
+    "files" : "test/**/*.js",
+    "browsers" : [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/5..latest",
+      "ipad/5..latest",
+      "android-browser/4..latest"
+    ]
   },
   "license": "BSD (MIT)",
   "bugs": {
