@@ -94,24 +94,26 @@ THE SOFTWARE.
 
     };
 
-    // add some setters so we can set penis.balls and penis.head directly
-    Object.defineProperty(penis,'balls',{
-      get : function(){
-        return _global.B;
-      },
-      set : penis.setBalls,
-      enumerable : true,
-      configurable : false
-    });
+    // add some setters so we can set penis.balls and penis.head directly if setters are available.
+    if(typeof Object.defineProperty == 'function'){
+      Object.defineProperty(penis,'balls',{
+        get : function(){
+          return _global.B;
+        },
+        set : penis.setBalls,
+        enumerable : true,
+        configurable : false
+      });
 
-    Object.defineProperty(penis,'head',{
-      get : function(){
-        return _global.D;
-      },
-      set : penis.setDickHead,
-      enumerable : true,
-      configurable : false
-    });
+      Object.defineProperty(penis,'head',{
+        get : function(){
+          return _global.D;
+        },
+        set : penis.setDickHead,
+        enumerable : true,
+        configurable : false
+      });
+    }
 
     //exports to multiple environments
     if (typeof define === 'function' && define.amd) { //AMD

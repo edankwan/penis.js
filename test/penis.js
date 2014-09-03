@@ -1,7 +1,7 @@
 var assert = require('assert');
 var penis = require('../src/penis');
 
-describe('set dick and balls',function(){
+describe('Setting dick and balls',function(){
   before(function(done){
     penis.setBalls('1');
     penis.setDickHead(1);
@@ -30,6 +30,11 @@ describe('set dick and balls',function(){
   });
 
   describe('via setters',function(){
+
+    after(function(done){
+      penis.reset();
+      done();
+    });
 
     it('should allow setting B via a property',function(done){
       penis.balls = 'BALLS';

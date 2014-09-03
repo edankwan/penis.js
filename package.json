@@ -4,7 +4,7 @@
   "description": "for comparing variables with B==D",
   "main": "src/penis.js",
   "scripts": {
-    "test": "mocha --reporter spec test/"
+    "test": "mocha --ui bdd --reporter spec test/"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,12 @@
     "penis"
   ],
   "devDependencies": {
-    "mocha": "~1.21.4"
+    "mocha": "~1.21.4",
+    "testling": "^1.7.0"
+  },
+  "testling" : {
+    "harness" : "mocha-bdd",
+    "files" : "test/**/*.js"
   },
   "license": "BSD (MIT)",
   "bugs": {
