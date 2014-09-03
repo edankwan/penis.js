@@ -4,7 +4,7 @@ var penis = require('../src/penis');
 describe('Setting dick and balls',function(){
   before(function(done){
     penis.setBalls('1');
-    penis.setDickHead(1);
+    penis.setHead(1);
     done();
   });
 
@@ -52,7 +52,7 @@ describe('Setting dick and balls',function(){
 
 });
 
-describe('reset dick and balls',function(){
+describe('reset head and balls',function(){
   var previousDValue = 'previous D';
   var previousBValue = 'previous B';
 
@@ -65,7 +65,7 @@ describe('reset dick and balls',function(){
   it('should reset original values when reset() is called',function(done){
     penis.setBalls('1');
     assert.equal(B,'1');
-    penis.setDickHead(1);
+    penis.setHead(1);
     assert.equal(D,1);
     penis.reset();
     assert.equal(B,previousBValue);

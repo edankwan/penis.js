@@ -63,33 +63,36 @@ THE SOFTWARE.
     /*jslint browser: true*/
     /*global define, module, global*/
 
-    var prev = { B : undefined, D : undefined };
+    var _undef;
 
     var _global = typeof window === 'undefined' ? global : window;
+
+    var prev = { B : _undef, D : _undef };
+
 
     var penis = {
 
         version: 0.2,
 
         setBalls: function (balls) {
-            if (prev.B === undefined) {
+            if (prev.B === _undef) {
               prev.B = _global.B;
             }
             _global.B = balls;
         },
 
-        setDickHead: function (dickHead) {
-            if (prev.D === undefined) {
+        setHead: function (head) {
+            if (prev.D === _undef) {
               prev.D = _global.D;
             }
-            _global.D = dickHead;
+            _global.D = head;
         },
 
         reset: function(){
             _global.D = prev.D;
-            prev.D = undefined;
+            prev.D = _undef;
             _global.B = prev.B;
-            prev.B = undefined;
+            prev.B = _undef;
         }
 
     };
@@ -109,7 +112,7 @@ THE SOFTWARE.
         get : function(){
           return _global.D;
         },
-        set : penis.setDickHead,
+        set : penis.setHead,
         enumerable : true,
         configurable : false
       });

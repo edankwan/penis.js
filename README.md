@@ -16,14 +16,14 @@ if(a === b) alert('true')
 penis.js comparing:
 ```js
 penis.setBalls('foo');
-penis.setDickHead('bar');
+penis.setHead('bar');
 if(B===D) alert('true');
 ```
 
 Soft or hard penis comparing:
 ```js
 penis.setBalls('0');
-penis.setDickHead(0);
+penis.setHead(0);
 
 var softPenisCompareResult = B==D; // true
 var hardPenisCompareResult = B===D; // false
@@ -57,7 +57,7 @@ When you've finished with your current penis, you can reset to get your global `
 ```js
 D = 'dick';
 
-penis.setDickHead('Crabapple');
+penis.setHead('Crabapple');
 
 penis.reset();
 
