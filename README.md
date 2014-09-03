@@ -2,6 +2,8 @@ penis.js
 ===
 Comparing variables was never been that easy and clear like using *penis.js*. You can use it in your websites or in your node application.
 
+[![browser support](https://ci.testling.com/jesseditson/penis.png)](https://ci.testling.com/jesseditson/penis)
+
 Usage
 ---
 Traditional comparing:
@@ -30,9 +32,45 @@ var hardPenisCompareResult = B===D; // false
 var continent = B===D ? 'Africa' : 'Asia';
 ```
 
+Penis is compatible with AMD, commonjs, or can be just included as a script tag in a browser.
+
+You can install penis as a node module by running `npm install penis`.
+
+You can then use it by requiring it:
+
+```js
+var penis = require('penis');
+```
+
+If your browser supports [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty#Browser_compatibility), you can use the `balls` and `head` properties to set these properties instead:
+
+```js
+penis.balls = '1';
+penis.head = 1;
+
+B==D; // true
+B===D; // false
+```
+
+When you've finished with your current penis, you can reset to get your global `B` and `D` back:
+
+```js
+D = 'dick';
+
+penis.setDickHead('Crabapple');
+
+penis.reset();
+
+D == 'dick' // true;
+```
+
 Caution
 ---
-penis.js uses the global variables "B" and "D" such that you can use the awesome command "B==D" to compare 2 variables everywhere. 
+penis.js uses the global variables "B" and "D" such that you can use the awesome command "B==D" to compare 2 variables everywhere.
+
+Testing
+---
+run `npm test` or `testling` to run the test suite.
 
 License
 ---
