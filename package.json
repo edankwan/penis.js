@@ -1,6 +1,6 @@
 {
   "name": "penis",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "for comparing variables with B==D",
   "main": "src/penis.js",
   "scripts": {
@@ -35,7 +35,7 @@
       "android-browser/4..latest"
     ]
   },
-  "license": "BSD (MIT)",
+  "license": "GPL (Giant Penis License)",
   "bugs": {
     "url": "https://github.com/edankwan/penis.js/issues"
   },

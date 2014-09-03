@@ -69,7 +69,7 @@ THE SOFTWARE.
 
     var penis = {
 
-        version: 0.1,
+        version: 0.2,
 
         setBalls: function (balls) {
             if (prev.B === undefined) {
