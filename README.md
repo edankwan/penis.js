@@ -74,4 +74,4 @@ run `npm test` or `testling` to run the test suite.
 
 License
 ---
-penis.js is currently under **Giant Penis License(GPL)** which is a deformed M.I.T license included a penis ascii code.
+penis.js is currently under **Giant Penis License (GPL)** which is a deformed M.I.T license including penis text art.
