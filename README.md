@@ -1,5 +1,8 @@
 penis.js
 ===
+
+![Parental Guidance Recommended](edankwan.github.io/penis.js/assets/pg.jpg)
+
 Comparing variables was never been that easy and clear like using *penis.js*. You can use it in your websites or in your node application.
 
 [![browser support](https://ci.testling.com/jesseditson/penis.png)](https://ci.testling.com/jesseditson/penis)
