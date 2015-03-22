@@ -37,13 +37,20 @@ var continent = B===D ? 'Africa' : 'Asia';
 
 Penis is compatible with AMD, commonjs, or can be just included as a script tag in a browser.
 
-~~You can install penis as a node module by running `npm install penis`.~~
-> Apparently some people is a bit sensitive with the word "penis", we respect that and hence we took down the support on npm and bower. Hopefully, we will find another way to keep it grow :)
+You can install penis as a node module with:
+```
+npm install edankwan/penis.js
+```
 
 You can then use it by requiring it:
 
 ```js
 var penis = require('penis');
+```
+
+[Bower](http://bower.io/) is also supported:
+```
+bower install penis.js
 ```
 
 If your browser supports [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty#Browser_compatibility), you can use the `balls` and `head` properties to set these properties instead:
