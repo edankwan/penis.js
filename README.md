@@ -2,6 +2,8 @@
 
 Comparing variables has never been that easy and clear like using **penis.js**. You can use it in your websites or in your node application.
 
+This library also has ReactJS bindings wiht the [CondomJS](https://github.com/nipatiitti/condomjs) wrapper component.
+
 Usage
 ---
 Traditional comparing:
